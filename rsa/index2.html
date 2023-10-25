@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>RSA</title>
+</head>
+<body>
+  <div id="container">
+    <h1>RSA Encriptacion <br>
+        Ascimentrica</h1>
+    <label for="messageToEncrypt">Mensaje a encriptar:</label>
+    <input type="text" id="messageToEncrypt" value="">
+    <br><br>
+    <label for="messageToDecrypt">Mensaje a descifrar:</label>
+    <input type="text" id="messageToDecrypt" value="">
+    <br><br>
+    <button onclick="generateKeys()">Generar Claves</button>
+    <button onclick="encrypt()">Cifrar</button>
+    <button onclick="decrypt()">Descifrar</button>
+    <br><br>
+    <div id="results">
+      <p>Clave Pública (n, e): <span id="publicKey"></span></p>
+      <p>Clave Privada (n,d): <span id="privateKey"></span></p>
+      <p>Mensaje a Cifrar: <span id="messageToEncryptDisplay"></span></p>
+      <p>Mensaje Cifrado: <span id="encryptedMessage"></span></p>
+      <p>Mensaje a Descifrar: <span id="messageToDecryptDisplay"></span></p>
+      <p>Mensaje Descifrado: <span id="decryptedMessage"></span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
